@@ -46,8 +46,7 @@ function getBreeds() {
         statusCode: {
             200: function (res) {
                 let breeds = res.message;
-                let select = document.getElementById('breed-select')
-                // noinspection BadExpressionStatementJS
+                let select = document.getElementById('breed-select');
                 breeds.forEach(breed => {
                     let option = document.createElement('option');
                     option.value = breed;
